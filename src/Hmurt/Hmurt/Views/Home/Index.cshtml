@@ -1,3 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Welcome";
+    ViewBag.Title = "Welcome";
 }
+
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">@Html.Partial("_Home")</div>
+    <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">@Html.Partial("_CV")</div>
+    <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">@Html.Partial("_Projects")</div>
+</div>

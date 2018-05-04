@@ -15,18 +15,6 @@ namespace Hmurt.Controllers
             return View();
         }
 
-        [Route("CV")]
-        public IActionResult CV()
-        {
-            return View();
-        }
-
-        [Route("Projects")]
-        public IActionResult Projects()
-        {
-            return View();
-        }
-
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
