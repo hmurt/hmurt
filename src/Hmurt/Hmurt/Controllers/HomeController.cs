@@ -15,17 +15,15 @@ namespace Hmurt.Controllers
             return View();
         }
 
-        public IActionResult About()
+        [Route("CV")]
+        public IActionResult CV()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
-        public IActionResult Contact()
+        [Route("Projects")]
+        public IActionResult Projects()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 
