@@ -20,6 +20,12 @@
     <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Content\en.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
   <Target Name="RunGulp" BeforeTargets="Build">
     <Exec Command="node_modules\.bin\gulp.cmd" />
   </Target>
