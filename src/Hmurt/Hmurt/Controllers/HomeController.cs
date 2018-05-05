@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Hmurt.Models;
+using System.IO;
+using System.Reflection;
 
 namespace Hmurt.Controllers
 {
@@ -12,7 +14,18 @@ namespace Hmurt.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = new ContentModel();
+
+            using (StreamReader r = new StreamReader(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Content/en.md")))
+            {
+                var markdown = r.ReadToEnd();
+
+                model.HomeContent = markdown;
+                model.CVContent = markdown;
+                model.ProjectsContent = markdown + "asdf";
+            }
+
+            return View(model);
         }
 
         public IActionResult Error()
