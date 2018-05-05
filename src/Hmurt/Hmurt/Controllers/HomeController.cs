@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Hmurt.Models;
 using System.IO;
 using System.Reflection;
+using CommonMark;
 
 namespace Hmurt.Controllers
 {
@@ -20,9 +21,9 @@ namespace Hmurt.Controllers
             {
                 var markdown = r.ReadToEnd();
 
-                model.HomeContent = markdown;
-                model.CVContent = markdown;
-                model.ProjectsContent = markdown + "asdf";
+                model.HomeContent = CommonMarkConverter.Convert(markdown);
+                model.CVContent = CommonMarkConverter.Convert(markdown);
+                model.ProjectsContent = CommonMarkConverter.Convert(markdown);
             }
 
             return View(model);
