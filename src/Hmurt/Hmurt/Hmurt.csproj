@@ -21,7 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Content\en.md">
+    <None Update="Content\cv.en.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\home.en.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\projects.en.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

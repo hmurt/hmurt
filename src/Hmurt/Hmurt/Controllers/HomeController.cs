@@ -17,12 +17,21 @@ namespace Hmurt.Controllers
         {
             var model = new ContentModel();
 
-            using (StreamReader r = new StreamReader(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Content/en.md")))
+            using (StreamReader r = new StreamReader(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Content/home.en.md")))
             {
                 var markdown = r.ReadToEnd();
-
                 model.HomeContent = CommonMarkConverter.Convert(markdown);
+            }
+
+            using (StreamReader r = new StreamReader(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Content/cv.en.md")))
+            {
+                var markdown = r.ReadToEnd();
                 model.CVContent = CommonMarkConverter.Convert(markdown);
+            }
+
+            using (StreamReader r = new StreamReader(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Content/projects.en.md")))
+            {
+                var markdown = r.ReadToEnd();
                 model.ProjectsContent = CommonMarkConverter.Convert(markdown);
             }
 
