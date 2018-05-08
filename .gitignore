@@ -267,4 +267,4 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/
 
-src/Hmurt/Hmurt/Content/*.md
+src/Hmurt/Hmurt/Content/*
