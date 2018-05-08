@@ -5,6 +5,14 @@
     padding-left: 15px;
     padding-right: 15px; }
 
+h1, h2 {
+  text-align: center; }
+
+img {
+  height: 300px;
+  border: 2px solid #6d6d6d;
+  margin-bottom: 30px; }
+
 .nav-pills {
   margin-left: -16px;
   margin-right: -16px; }

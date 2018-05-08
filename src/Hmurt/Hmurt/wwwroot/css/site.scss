@@ -1,4 +1,6 @@
-﻿body {
+﻿$borderColour: #6d6d6d;
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
     
@@ -6,6 +8,16 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    height: 300px;
+    border: 2px solid $borderColour;
+    margin-bottom: 30px;
 }
 
 .nav-pills {
@@ -22,7 +34,7 @@
         }
 
         .nav-link-content {
-            color: #6d6d6d;
+            color: $borderColour;
             position: relative;
             height: 30px;
         }
@@ -34,7 +46,7 @@
             height: 2px;
             bottom: 0;
             left: 0;
-            background: #6d6d6d;
+            background: $borderColour;
             visibility: hidden;
             border-radius: 5px;
             transform: scaleX(0);
