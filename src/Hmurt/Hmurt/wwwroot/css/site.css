@@ -27,6 +27,11 @@ table {
         text-align: right;
         border-right: 1px solid #6d6d6d; }
 
+.links {
+  text-align: center; }
+  .links > div {
+    margin-top: 5px; }
+
 .nav-pills {
   margin-left: -16px;
   margin-right: -16px; }
