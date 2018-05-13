@@ -13,6 +13,20 @@ img {
   border: 2px solid #6d6d6d;
   margin-bottom: 30px; }
 
+table {
+  margin-bottom: 20px; }
+  table tr {
+    border-bottom: 1px solid #6d6d6d; }
+    table tr:last-child {
+      border: none; }
+    table tr td {
+      padding: 6px 15px; }
+      table tr td:first-child {
+        font-weight: bold;
+        width: 170px;
+        text-align: right;
+        border-right: 1px solid #6d6d6d; }
+
 .nav-pills {
   margin-left: -16px;
   margin-right: -16px; }

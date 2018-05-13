@@ -20,6 +20,29 @@ img {
     margin-bottom: 30px;
 }
 
+table {
+    margin-bottom: 20px;
+
+    tr {
+        border-bottom: 1px solid $borderColour;
+
+        &:last-child {
+            border: none;
+        }
+
+        td {
+            padding: 6px 15px;
+
+            &:first-child {
+                font-weight: bold;
+                width: 170px;
+                text-align: right;
+                border-right: 1px solid $borderColour;
+            }
+        }
+    }
+}
+
 .nav-pills {
     margin-left: -16px;
     margin-right: -16px;
