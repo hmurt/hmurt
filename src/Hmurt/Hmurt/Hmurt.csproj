@@ -28,6 +28,9 @@
     <None Update="Content\home.en.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Content\Images\face.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Content\projects.en.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
