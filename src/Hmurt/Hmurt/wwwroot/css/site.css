@@ -23,8 +23,12 @@ table {
       padding: 6px 15px; }
       table tr td:first-child {
         font-weight: bold;
-        width: 170px;
+        width: 172px;
         text-align: right;
+        border-right: 1px solid #6d6d6d; }
+      table tr td:nth-child(2) {
+        font-weight: bold;
+        width: 150px;
         border-right: 1px solid #6d6d6d; }
 
 .links {
@@ -60,4 +64,3 @@ table {
   .nav-pills .nav-link.active .nav-link-content:before {
     visibility: visible;
     transform: scaleX(1); }
-
