@@ -10,7 +10,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: 'src/Hmurt2/Hmurt.sln'
+  solution: '**/Hmurt2.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
