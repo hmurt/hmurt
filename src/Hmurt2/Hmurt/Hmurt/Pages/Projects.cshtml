@@ -1,0 +1,48 @@
+﻿@page
+@model ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<h1 class="my-5">@ViewData["Title"]</h1>
+
+<h3 class="mt-5"><a href="https://hankkeesi.fi" target="_blank">Hankkeesi.fi</a></h3>
+
+<p>Hankkeesi.fi is a service to help regular consumers with construction projects, such as constructing a house or building an extension. You can request quotes from professionals for the full construction project or any smaller part of it. After finding a professional and accepting their offer, you can follow the construction process in the service, which also handles the billing process for you. Using the service is completely free of charge for the consumer.</p>
+<p>Developed by me from start to finish. I chose ASP.NET MVC without a full frontend framework, because the nature of this site is very backend-heavy and it also has a strong emphasis on SEO. I might extend the site with a server-rendered React or Blazor frontend in the future, if I see the need for it.</p>
+<ul>
+	<li>ASP.NET / C#</li>
+	<li>Microsoft SQL Server</li>
+	<li>Hosted by Azure on a Linux App Service</li>
+	<li>Azure DevOps CI/CD</li>
+</ul>
+
+<h3 class="mt-5">IoT TCP server</h3>
+
+<p>I've been maintaining a TCP server for certain commercial IoT devices as a consultant since 2015. This project has challenged me with some difficult tasks, mostly because of the huge volume of data that the devices are sending to the server. I've solved the performance challenge by utilizing a multi-threaded architecture and a tech called IOCP (IO Completion Ports). The database inserts are using binary COPY operations which are amazingly fast.</p>
+<p>Unfortunately the project is classified so I can't disclose more info, but it's been incredibly interesting to be a part of it.</p>
+<ul>
+	<li>C#</li>
+	<li>TCP</li>
+	<li>Microsoft SQL Server</li>
+	<li>MQTT Integration</li>
+	<li>On-premises hosting</li>
+</ul>
+
+<h3 class="mt-5">Js-wasm-comparison <i class="fab fa-github fa-fw"></i><a class="github" href="https://github.com/hmurt/js-wasm-comparison" target="_blank">Github</a></h3>
+
+<p>Compares the execution times of various functions implemented in JavaScript and WebAssemby (wasm). The WebAssembly code is written using C and compiled using emscripten. Basically the purpose of this project is to get a proper idea about whether wasm is a feasible alternative for such and such use case. Currently the project includes only two functions: a string concatenation operation and a basic integer calculation. In the future it will include more functions, such as array operations, more complex arithmetic and graphics calculations. Also I want to add Jenkins to run the build daily.</p>
+<ul>
+	<li>JS</li>
+	<li>wasm</li>
+	<li>C</li>
+</ul>
+
+<h3 class="mt-5">Bitmap-locator <i class="fab fa-github fa-fw"></i><a class="github" href="https://github.com/hmurt/bitmap-locator" target="_blank">Github</a></h3>
+
+<p>.NET implementation of a software that can find given bitmaps on the screen or on another bitmap. In short, the program will return the pixel coordinates of a bitmap's location within a larger bitmap. Includes a simple WinForms GUI. I have used it in some video editing scenarios, but I'm quite sure it has many more potential uses. It also has Tesseract to support reading text off the bitmap.</p>
+<ul>
+	<li>.NET / C#</li>
+	<li>Tesseract</li>
+</ul>
+
